@@ -23,11 +23,14 @@ class NewsFeedViewController: UIViewController,UITableViewDelegate,UITableViewDa
         tableview.rowHeight = UITableViewAutomaticDimension
         tableview.estimatedRowHeight = 120.0
         posts = [Posts]()
-        getPostData();
         tableview.register(UINib(nibName:"FeedTableViewCell", bundle: nil) , forCellReuseIdentifier: "FeedCell")
         // Do any additional setup after loading the view.
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+          getPostData();
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -70,13 +73,16 @@ class NewsFeedViewController: UIViewController,UITableViewDelegate,UITableViewDa
         return cell;
     }
    
+    var postSelected : Posts = Posts();
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showComments", sender: self)
+      
+        postSelected = posts[indexPath.row]
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showComments", sender: self)
+        
     }
     
-    
-     @objc func unlikeClicked(_ sender : UIButton)  {
+    @objc func unlikeClicked(_ sender : UIButton)  {
         
         let postId = self.posts[sender.tag]._id!
         
@@ -163,6 +169,12 @@ class NewsFeedViewController: UIViewController,UITableViewDelegate,UITableViewDa
               }
            }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! CommentsViewController
+        destinationVC.post = postSelected
+
     }
     
 }

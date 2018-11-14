@@ -1,23 +1,16 @@
 //
-//  DevlopersProfileTableViewCell.swift
+//  SkillsTableViewCell.swift
 //  DeveloperSocialSite
 //
-//  Created by Chandrika Bajoria on 31/10/18.
+//  Created by Chandrika Bajoria on 14/11/18.
 //  Copyright © 2018 Chandrika Bajoria. All rights reserved.
 //
 
 import UIKit
 
-class DevlopersProfileTableViewCell: UITableViewCell {
+class SkillsTableViewCell: UITableViewCell {
 
-    
-    @IBOutlet weak var nameLbl: UILabel!
-    
-    @IBOutlet weak var designationLbl: UILabel!
-    
-    @IBOutlet weak var locationLbl: UILabel!
-    
-    @IBOutlet weak var skillsLbl: UILabel!
+    @IBOutlet weak var skills: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,5 +21,11 @@ class DevlopersProfileTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    static var nib:UINib {
+        return UINib(nibName: identifier, bundle: nil)
+    }
     
+    static var identifier: String {
+        return String(describing: self)
+    }
 }

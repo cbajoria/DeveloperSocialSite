@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		494884AD765AEAAA54404E1C /* Pods_DeveloperSocialSite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1395F11CB47040D60DF1A58 /* Pods_DeveloperSocialSite.framework */; };
+		66089E6C21994DF5007FC2B7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66089E6A21994DF5007FC2B7 /* ProfileTableViewCell.xib */; };
+		66089E6D21994DF5007FC2B7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66089E6B21994DF5007FC2B7 /* ProfileTableViewCell.swift */; };
+		66089E7021995238007FC2B7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66089E6F21995238007FC2B7 /* ProfileViewModel.swift */; };
+		66089E73219BFDDC007FC2B7 /* EducationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66089E71219BFDDC007FC2B7 /* EducationTableViewCell.swift */; };
+		66089E74219BFDDC007FC2B7 /* EducationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66089E72219BFDDC007FC2B7 /* EducationTableViewCell.xib */; };
+		66089E77219C0024007FC2B7 /* SkillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66089E75219C0024007FC2B7 /* SkillsTableViewCell.swift */; };
+		66089E78219C0024007FC2B7 /* SkillsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66089E76219C0024007FC2B7 /* SkillsTableViewCell.xib */; };
 		66497059217897A8007B626C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66497058217897A8007B626C /* AppDelegate.swift */; };
 		6649705B217897A8007B626C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6649705A217897A8007B626C /* LoginViewController.swift */; };
 		6649705E217897A8007B626C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6649705C217897A8007B626C /* Main.storyboard */; };
@@ -27,10 +34,20 @@
 		66BDD29D219157E90010426B /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDD29B219157E90010426B /* CommentTableViewCell.swift */; };
 		66BDD29E219157E90010426B /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BDD29C219157E90010426B /* CommentTableViewCell.xib */; };
 		66BDD2A0219159FD0010426B /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDD29F219159FD0010426B /* CommentsViewController.swift */; };
+		66BDD2A2219195930010426B /* DevelopersProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDD2A1219195930010426B /* DevelopersProfileViewController.swift */; };
+		66BDD2A42191BD6D0010426B /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDD2A32191BD6D0010426B /* Developer.swift */; };
+		66BDD2A621955D330010426B /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDD2A521955D330010426B /* ProfileDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CD49C94A595432FA7FCB4BA /* Pods-DeveloperSocialSite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperSocialSite.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperSocialSite/Pods-DeveloperSocialSite.release.xcconfig"; sourceTree = "<group>"; };
+		66089E6A21994DF5007FC2B7 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		66089E6B21994DF5007FC2B7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		66089E6F21995238007FC2B7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		66089E71219BFDDC007FC2B7 /* EducationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationTableViewCell.swift; sourceTree = "<group>"; };
+		66089E72219BFDDC007FC2B7 /* EducationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EducationTableViewCell.xib; sourceTree = "<group>"; };
+		66089E75219C0024007FC2B7 /* SkillsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsTableViewCell.swift; sourceTree = "<group>"; };
+		66089E76219C0024007FC2B7 /* SkillsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillsTableViewCell.xib; sourceTree = "<group>"; };
 		66497055217897A8007B626C /* DeveloperSocialSite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeveloperSocialSite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66497058217897A8007B626C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6649705A217897A8007B626C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +69,9 @@
 		66BDD29B219157E90010426B /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		66BDD29C219157E90010426B /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		66BDD29F219159FD0010426B /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		66BDD2A1219195930010426B /* DevelopersProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersProfileViewController.swift; sourceTree = "<group>"; };
+		66BDD2A32191BD6D0010426B /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		66BDD2A521955D330010426B /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
 		E1395F11CB47040D60DF1A58 /* Pods_DeveloperSocialSite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeveloperSocialSite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FAEDC27303826D32CEBE05 /* Pods-DeveloperSocialSite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperSocialSite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperSocialSite/Pods-DeveloperSocialSite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66089E6E21995227007FC2B7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				66089E6F21995238007FC2B7 /* ProfileViewModel.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		6649704C217897A7007B626C = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +134,9 @@
 		66BDD286218048D60010426B /* models */ = {
 			isa = PBXGroup;
 			children = (
+				66089E6E21995227007FC2B7 /* New Group */,
 				66BDD29321818E600010426B /* Posts.swift */,
+				66BDD2A32191BD6D0010426B /* Developer.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -118,6 +148,8 @@
 				66BDD28A21806B510010426B /* SignUpViewController.swift */,
 				66BDD28F21807D2A0010426B /* NewsFeedViewController.swift */,
 				66BDD29F219159FD0010426B /* CommentsViewController.swift */,
+				66BDD2A1219195930010426B /* DevelopersProfileViewController.swift */,
+				66BDD2A521955D330010426B /* ProfileDetailViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -135,12 +167,18 @@
 		66BDD299219157B40010426B /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				66089E6B21994DF5007FC2B7 /* ProfileTableViewCell.swift */,
+				66089E6A21994DF5007FC2B7 /* ProfileTableViewCell.xib */,
 				6649706F217DCE12007B626C /* FeedTableViewCell.swift */,
 				66497070217DCE12007B626C /* FeedTableViewCell.xib */,
 				66BDD29521897D740010426B /* DevlopersProfileTableViewCell.swift */,
 				66BDD29621897D740010426B /* DevlopersProfileTableViewCell.xib */,
 				66BDD29B219157E90010426B /* CommentTableViewCell.swift */,
 				66BDD29C219157E90010426B /* CommentTableViewCell.xib */,
+				66089E71219BFDDC007FC2B7 /* EducationTableViewCell.swift */,
+				66089E72219BFDDC007FC2B7 /* EducationTableViewCell.xib */,
+				66089E75219C0024007FC2B7 /* SkillsTableViewCell.swift */,
+				66089E76219C0024007FC2B7 /* SkillsTableViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -224,7 +262,10 @@
 			files = (
 				66497066217897A9007B626C /* LaunchScreen.storyboard in Resources */,
 				66BDD29E219157E90010426B /* CommentTableViewCell.xib in Resources */,
+				66089E74219BFDDC007FC2B7 /* EducationTableViewCell.xib in Resources */,
+				66089E78219C0024007FC2B7 /* SkillsTableViewCell.xib in Resources */,
 				66497072217DCE12007B626C /* FeedTableViewCell.xib in Resources */,
+				66089E6C21994DF5007FC2B7 /* ProfileTableViewCell.xib in Resources */,
 				66497063217897A9007B626C /* Assets.xcassets in Resources */,
 				66BDD29821897D740010426B /* DevlopersProfileTableViewCell.xib in Resources */,
 				6649705E217897A8007B626C /* Main.storyboard in Resources */,
@@ -284,14 +325,21 @@
 				66BDD28B21806B510010426B /* SignUpViewController.swift in Sources */,
 				66BDD2A0219159FD0010426B /* CommentsViewController.swift in Sources */,
 				66497074217DF183007B626C /* UIViewExtension.swift in Sources */,
+				66BDD2A2219195930010426B /* DevelopersProfileViewController.swift in Sources */,
 				66BDD28E21806CDE0010426B /* UrlHelper.swift in Sources */,
 				6649705B217897A8007B626C /* LoginViewController.swift in Sources */,
+				66BDD2A42191BD6D0010426B /* Developer.swift in Sources */,
 				66497071217DCE12007B626C /* FeedTableViewCell.swift in Sources */,
 				66BDD29721897D740010426B /* DevlopersProfileTableViewCell.swift in Sources */,
 				66497061217897A8007B626C /* DeveloperSocialSite.xcdatamodeld in Sources */,
 				66BDD29D219157E90010426B /* CommentTableViewCell.swift in Sources */,
+				66089E6D21994DF5007FC2B7 /* ProfileTableViewCell.swift in Sources */,
+				66089E73219BFDDC007FC2B7 /* EducationTableViewCell.swift in Sources */,
+				66089E77219C0024007FC2B7 /* SkillsTableViewCell.swift in Sources */,
+				66089E7021995238007FC2B7 /* ProfileViewModel.swift in Sources */,
 				66497059217897A8007B626C /* AppDelegate.swift in Sources */,
 				66BDD29421818E600010426B /* Posts.swift in Sources */,
+				66BDD2A621955D330010426B /* ProfileDetailViewController.swift in Sources */,
 				66BDD292218095A10010426B /* UserDefaultsExtension.swift in Sources */,
 				66BDD29021807D2A0010426B /* NewsFeedViewController.swift in Sources */,
 			);

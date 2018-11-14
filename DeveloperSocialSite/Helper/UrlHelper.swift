@@ -16,5 +16,9 @@ struct UrlHelper {
     static let post : String = root + "posts"
     static let likes : String = root + "posts/like/"
      static let unlikes : String = root + "posts/unlike/"
+    static let comment : String = root + "posts/comment/"
+    static let developers : String = root + "profile/all"
+     static let profile : String = root + "profile/handle/"
+
   
 }
